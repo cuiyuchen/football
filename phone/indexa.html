@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>产品详情页</title>
+    <style>
+    a{
+        color: #999;
+    }
+     html,body{
+        height:100%;
+        background: #f1f1f1;
+    }
+    body{
+        height: 100%;
+        margin:0 auto;
+        max-width: 640px;
+        background: #f1f1f1;
+        position: relative;
+    }
+    header{
+        width:100%;
+        height:27px;
+        padding-top:10px; 
+        background:#0f91c5;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        line-height: 37px;
+    }
+    header div{
+        margin:0px auto;
+        overflow: hidden;
+        width:107px;
+        height: 22px;
+    }
+    header .headerleft{
+        width:53.5px;
+        height:22px;
+        background: #ccc;
+        opacity: 0.3;
+        text-align: center;
+        display: block;
+        float: left;
+        line-height: 22px;
+        border-radius: 10px 0 0 10px;
+        
+    }
+    header .headerrigth{
+        width:53.5px;
+        height:22px;
+       
+        text-align: center;
+        line-height: 22px;
+        border-radius: 0px 10px 10px 0px;
+        display: block;
+        float: left;
+        background: #ccc;
+        opacity: 0.5;
+    }
+    .nav{
+        position:fixed;
+        bottom: 0px;
+        height: 0.8rem;
+        width:100%;
+        position: fixed;      
+    }
+     .nav ul{
+        height: 0.8rem;
+        width:100%;
+        border-top:1px solid #ccc; 
+        max-width: 640px;
+        font-size: 0.24rem;
+        background: #fff;
+     }
+     .nav ul li{
+        width:20%;
+        height:0.8px;
+        float: left;
+        text-align: center;
+        line-height: 0.8px;
+       text-align:center;
+     }
+        .nav ul li a {
+        text-align: center;
+        width:0.5rem;
+        height: 0.8rem;
+        display: inline-block;
+        padding-top: 0.6rem;
+        box-sizing:border-box;
+        color:#ccc;
+    }
+        .nav ul li:nth-child(3) a{
+        width:0.85rem;
+        height:0.85rem;
+        border:0.02rem #ccc solid;
+        border-radius: 50%;
+        margin-top:-0.1rem; 
+        background: url(img/camera.png) #fff no-repeat center;
+        background-size:0.52rem 0.52rem;
+    }
+        .nav ul li:nth-child(1) a{
+        background: url(img/picaa.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #0f91c5;
+        }
+        .nav ul li:nth-child(2) a{
+        background: url(img/picbb.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #ddd;
+        }
+        .nav ul li:nth-child(4) a{
+        background: url(img/piccb.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #ddd;
+        }
+        .nav ul li:nth-child(5) a{
+        background: url(img/picdb.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #ddd;
+        }
+        .nav ul li:nth-child(2) a:active{
+        background: url(img/picba.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #0f91c5;
+        }
+        .nav ul li:nth-child(3) a:active{
+        width:0.85rem;
+        height:0.85rem;
+        border:0.02rem #ccc solid;
+        border-radius: 50%;
+        margin-top:-0.1rem; 
+        background: url(img/crame.png) #fff no-repeat center;
+        background-size:0.52rem 0.52rem; 
+        }
+        .nav ul li:nth-child(4) a:active{
+        background: url(img/picca.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #0f91c5;
+        }
+        .nav ul li:nth-child(5) a:active{
+        background: url(img/picda.png) no-repeat 0.10rem 0.10rem;
+        background-size:0.3rem 0.3rem; 
+        color: #0f91c5;
+        }
+        #scroll{
+            background: #f1f1f1;
+            clear: both;
+            border-top:#d9d9d9 solid 0.01rem;
+            padding-top:0.1rem; 
+        }
+        .person{
+            background: #fff;
+            display: -webkit-box;
+            overflow: hidden;
+            height: 1.41rem;
+            font-size: 0.28rem;
+        }
+        .person div:nth-child(1){
+            width: 1.37rem;
+            text-align: center;
+            box-sizing:border-box;
+            padding-top:0.22rem; 
+        }
+        .person div:nth-child(2){
+            width:3.6rem;
+            box-sizing:border-box;
+            padding-top:0.22rem; 
+            color: #999999;
+        }
+        .person div:nth-child(3){
+            width:1.43rem;
+            color: #efefef;
+            box-sizing:border-box;
+            padding-top:0.22rem; 
+        }
+        .person div:nth-child(3) .iconfont{
+            font-size: 0.24rem
+        }
+         .person div:nth-child(1) img{
+            width: 0.95rem;
+            height: 0.95rem;
+            display: inline-block;
+         }
+         .person div:nth-child(2) p:nth-child(1){
+           margin:0.05rem 0 0.1rem 0px;
+        }
+        .section .write{
+            font-size: 0.28rem;
+            padding:0.2rem;
+            background: #fff;
+        }
+       
+</style>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="headerleft" href="index.html">热点</a>
+            <a class="headerrigth">关注</a>
+        </div>
+    </header>
+      <div id="wrapper" style="overflow:hidden;position: relative;">
+    <dl style="-webkit-margin-before:0em;">
+        <div id="pulldown" style="height: 50px;display: none;text-align: center;">
+        </div>
+        <div class="section">
+            
+        </div>
+        <div class="section">
+            <div class="person">
+                    <div>
+                        <img src="img/persona.png" alt="">
+                    </div>
+                    <div>
+                        <p>我叫小萌</p>
+                        <p>我是小萌我怕谁！哈哈哈哈</p>
+                    </div>
+                    <div>
+                       <i class="icon iconfont"><span>382344</span>&#xe64d;</i>
+                    </div>
+            </div>
+            <div class="picture">
+                <img src="img/cat.png" alt="">
+            </div>
+            <div class="write">小丸子啊小丸子</div>
+        </div>
+            
+            <div id="pullup" >
+            </div> 
+    </div>
+</div>
+<div class="nav">
+    <ul>
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="search.html">发现</a>
+        </li>
+        <li>  
+          <a href="###"><input type="file" hidden=""></a>
+        </li>
+        <li>
+            <a href="person.html">我的</a>
+        </li>
+        <li>
+            <a href="###">退出</a>
+        </li>
+    </ul>
+</div>
+ 
+</body>
+ <script>
+
+$(function(){
+    var headerheight=$("header").height();
+    var navheight=$("nav").height();
+    var footerheight=$(".nav").height();
+    var allheight=$(window).height()
+    var myscroll; 
+    var userid=localStorage['userid']; 
+    $("#wrapper").height(allheight-(headerheight+40))
+    myscroll=new iScroll("wrapper",{
+            mouseWheel: true,
+            onScrollStart:function(){   
+            },
+            onScrollMove:function(){
+            },
+            onScrollEnd:function(){
+            },
+    });
+    myscroll.refresh();
+    var arr=[];
+    var section=$(".section")[0]
+    if(userid){
+        var arr=[];
+        for(var i=0;i<1000;i++){
+        var i=i.toString();
+        var lo=localStorage[i];
+            if(typeof(lo)=="string"){
+                arr.push(lo);
+            }
+        }
+
+    for(var i=0;i<arr.length;i++){
+         $.ajax({
+        type:"GET",
+        async: true,
+        // http://localhost:80/FootBall/user/json/queryall.do
+        url:"http://localhost:8080/Proxy/FootBall/user/json/userinfo.do",
+        data:{
+            id:arr[i]
+        },
+        success:function(e){
+            var data=JSON.parse(e);
+            var obj=data.data.userinfo;
+            var person=document.createElement("div")
+            person.className="person";
+            var picture=document.createElement("div")
+            picture.className="picture";
+            var write=document.createElement("div")
+            write.className="write";
+            odiva=document.createElement("div");
+            odivb=document.createElement("div");
+            odivc=document.createElement("div");
+            var img=new Image();
+            img.src="http://101.200.173.217:8080/FootBall"+obj.avatarpath;
+            odiva.appendChild(img);
+            pa=document.createElement("p");
+            pb=document.createElement("p");
+            pa.innerHTML=obj.nickname;
+            pa.innerHTML=obj.loginname;
+            odivb.appendChild(pa);
+            odivb.appendChild(pb);
+            i=document.createElement("i");
+            i.className="icon iconfont";
+            if(obj.fbage==undefined){
+              obj.fbage=0;
+            }
+            i.innerHTML="<span>"+obj.fbage+"</span>&#xe64d;"
+            odivc.appendChild(i);
+            person.appendChild(odiva);
+            person.appendChild(odivb);
+            person.appendChild(odivc);
+            section.appendChild(person);
+          var imm=new Image();
+          img.onload=function(){
+             myscroll.refresh();
+          }
+          imm.src="img/cat.png";
+          imm.style.width="100%"
+          imm.style.height="auto"
+          picture.appendChild(imm);
+          section.appendChild(picture)
+         write.innerHTML=obj.favoriteTeam;
+         section.appendChild(write)
+
+
+
+// <div class="person">
+//                     <div>
+//                         <img src=" alt="">
+//                     </div>
+//                     <div>
+//                         <p>我叫小萌</p>
+//                         <p>我是小萌我怕谁！哈哈哈哈</p>
+//                     </div>
+//                     <div>
+//                        <i class="icon iconfont"><span>382344</span>&#xe64d;</i>
+//                     </div>
+//             </div>
+//             <div class="picture">
+//                 <img src="img/cat.png" alt="">
+//             </div>
+//             <div class="write">小丸子啊小丸子</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        } 
+
+    }) 
+
+    }
+
+    
+    }    
+
+})
+
+    </script>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <title>个人中心</title>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+  
+    <style>
+        html,body{
+            height:100%;
+            background: #dfdfdf;
+            max-width:640px;
+            margin: 0 auto;
+
+        }
+        body{
+            height:100%;
+            background:#fff;
+            font-size: 16px;
+            margin:0 auto;
+        }
+        header{
+            height:32px;
+            background:#0f91c5;
+            margin-right: 9px;
+            font-size: 0.24rem;
+            text-align: center;
+            line-height:32px;
+            color:#fff;
+            margin-bottom: 0.19rem;
+        }
+        input[type="search"]{
+            height:0.44rem;
+            width:5.16rem;
+            border:0.01rem #aaaaaa solid;
+            border-radius: 0.05rem;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            float: left;
+             margin-bottom:0.09rem;
+        }
+        button{
+            height: 0.44rem;
+            width:0.91rem;
+            background: #0f91c5;
+            border:none;
+            font-size: 0.24rem;
+            border:0.01rem solid #ddd;
+            color: #fff;
+            float: left;
+             border-radius: 0.05rem;
+              margin-bottom:0.09rem;
+              outline: none;
+        }
+        #wrapper{
+            background: #f1f1f1;
+            clear: both;
+            border-top:#d9d9d9 solid 0.01rem;
+            padding-top:0.1rem; 
+        }
+        .person{
+            padding-top: 0.24rem;
+            background: #fff;
+        }
+        .person dt{
+            padding-left: 0.24rem;
+            float: left;
+
+        }
+         .person dl{
+            overflow: hidden;
+            margin-bottom:0.18rem 
+         }
+         .person dt img{
+            width: 0.95rem;
+            height: 0.95rem;
+         }
+         .person dd{
+           padding-left: 0.14rem;
+            float: left;
+            font-size: 0.24rem;
+
+        }
+         .person dd p:nth-child(1){
+           margin:0.05rem 0 0.1rem 0px;
+        }
+        .person dd p:nth-child(2){
+            color:#b8b8b8;
+        }
+        .person ul{
+            height:0.53rem;
+            border-bottom: #e5e5e5 0.01rem solid;
+            display: -webkit-box;
+
+        }
+        .person ul li{
+             width:33.3333%;
+
+        }
+        .person .ppa a{
+            padding:0.1rem 0.2rem;
+            background: #0a0;
+            color: #fff;
+            border-radius: 10px;
+
+        }
+        .person .ppa a.aaa{
+            padding:0.1rem 0.2rem;
+            background: #aaa;
+            color: #999;
+            border-radius: 10px;
+        }
+        .ppac{
+            background: #0a0;
+            color: #fff;
+        }
+        .person ul a{
+            font-size: 0.24rem;
+            display: block;
+            height:0.48rem;
+            text-align: center;
+            line-height: 0.53rem;
+        
+        }
+        .person dl p.ppa{
+            padding-top:0.2rem;
+            box-sizing:border; 
+            float: right;
+            width:2rem;
+            line-height: 0.48rem;
+            text-align:center; 
+            height: 0.48rem;
+        }
+         .person ul li p{
+            height:0.05rem;
+            background: #0f91c5;
+            width:100%;
+            z-index: 200;
+            display: none;
+         }
+        .person ul li:nth-child(1) p{
+            display: block;
+         }
+        .main ul{
+            display: -webkit-box;
+         }
+        .main ul li{
+           box-flex:1;
+           width:50%;
+         }
+         .footer{
+            height:40px;
+            background: #f1f1f1;
+            position: fixed;
+            padding-top:5px ;
+            bottom: 0;
+            max-width: 640px;
+            width: 100%;
+            color: #ccc;
+            font-size: 14px;
+         }
+        .footer ul{
+            border-top: 1px solid #cdcdcd;
+            display: -webkit-box;
+            width: 100%;
+            height: 40px;
+            background: #fff;
+         }
+        .footer ul li{
+        padding-top: 3px;
+        line-height: 18px;
+        -webkit-box-flex: 1;
+        text-align: center;
+        }
+        .footer ul li a {
+            color: #ccc
+        }
+        .footer ul li:nth-child(3) a{
+           height:40px;
+           background:#fff;
+           display: inline-block;
+           width: 40px;
+           border-radius: 50%;
+           border:2px solid #dedede;
+           margin-top:-8px;
+           text-align: center;
+           line-height: 40px;
+           font-size: 28x;
+        }
+        .footer ul li.active{
+            color: #0f91c5;
+        }
+         .footer ul li.active a{
+            color: #0f91c5;
+         }
+    </style>
+</head>
+<body>
+    <header>发现</header>
+    <input type="search" placeholder="请输入昵称">
+    <button>搜索</button>
+    <div class="section">
+        
+    </div>
+     <div id="wrapper" style="overflow:hidden;position: relative";>
+        <div id="scroll">
+            <div class="person">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main">
+       <!--  <ul>
+            <li >
+                <img src="img/pic2.png" alt="">
+            </li>
+             <li>
+                <img src="img/pic2.png" alt="">
+            </li>
+        </ul> -->
+    </div>
+    <div class="footer">
+        <ul>
+                <li >
+                    <i class="icon iconfont">&#xe695;</i></br>
+                    <a href="index.html">首页</a>
+                </li>
+            
+                <li class="active">
+                    <i class="icon iconfont">&#xe699;</i></br>
+                     <a href="search.html">发现</a>
+                </li>
+
+                 <li>
+                      <a>
+                          <i class="icon iconfont" style="font-size: 25px;">&#xe6d9;</i>
+                      </a> 
+                </li>
+                 
+                <li>
+                    <i class="icon iconfont">&#xe68e;</i> </br>
+                     <a href="person.html">我的</a>
+                </li>
+              
+                <li>
+                    <i class="icon iconfont">&#xe630;</i></br>
+                    <a href="#fff">退出</a>
+                </li>   
+        </ul>
+    </div>
+     <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/iscroll.js"></script>  
+    <script scr="js/zepto.min.js"></script>
+    <script>
+$(function(){
+    var headerheight=$("header").height();
+    var navheight=$("nav").height();
+    var footerheight=$(".nav").height();
+    var allheight=$(window).height()
+    var myscroll;
+    var flag=true;
+    var userid=localStorage["userid"];
+    var hei=null;
+    var j=0;
+    if(userid){
+            $("button").on("click",function(){
+            // if(flag){
+                ajax(userid,1)
+                j++
+               flag=false;
+              // } 
+           })
+    }
+    $("input").on("blur",function(){
+        if($("input").length>0){
+            flag=true
+        }
+    })
+                 myscroll=new iScroll("wrapper",{                 
+                     mouseWheel: true, 
+                    onScrollStart:function(){ 
+                     myscroll.refresh();  
+                    },
+                    onScrollMove:function(){
+                        hei=this.maxScrollY;
+                       console.info(this.maxScrollY)                      
+                    },
+                    onScrollEnd:function(){
+                        if(this.y<=this.maxScrollY+10){
+
+                            ajax(userid,j)
+                            j++;
+                        }
+                    },               
+                 })
+          $("#wrapper").height(allheight-(headerheight+navheight+footerheight)-100)
+         myscroll.refresh();
+       })
+function ajax(userid,j){
+ var inp=$("input").val();
+ $.ajax({
+    type:"GET",
+    async: true,
+    // http://localhost:80/FootBall/user/json/queryall.do
+    url:"http://localhost:8080/Proxy/FootBall/user/json/queryall.do",
+    data:{
+        keyword:inp,
+        loginsuserid:userid,
+        "page.pageNo" :j,
+    },
+    success:function(e){
+        var data=JSON.parse(e);
+        var obj=data.data.userlist;
+       for(i=0;i<obj.length;i++){
+         var $ele=$("<dl><dt><img src='http://101.200.173.217:8080/FootBall"+obj[i].avatarpath+"'></dt><dd><p>"+obj[i].nickname+"</p><p>"+obj[i].signnature+"</p></dd><p class='ppa' dataid='"+obj[i].id+"'><a href='###'>关注</a></p></dl>");
+         $ele.appendTo($(".person"))
+       }
+        
+    } 
+
+}) 
+} 
+var asc=1;
+
+$(".person").on("click",".ppa",function(){
+    var userid=localStorage['userid'];
+    alert(userid)
+    var otherid=$(this).attr("dataid");
+    if(asc==1){
+    localStorage[otherid]=otherid;
+    $(this).find("a").text("取消").addClass("aaa") 
+    asc=2;
+    }else{
+         $(this).find("a").text("关注").removeClass("aaa");
+         localStorage.removeItem(otherid);
+         asc=1;
+    }
+   
+   
+
+   
+    // $.ajax({
+    //     type:"GET",
+    //     // http://localhost:80/FootBall/attention/json/queryall/followed.do
+    //     url:"http://localhost:8080/Proxy/FootBall/attention/json/queryall/followed.do",
+    //     data:{
+    //         loginsuserid:userid,
+    //         tagetuserid:otherid,
+
+    //     },
+    //     success:function(e){
+    //     console.info(e);
+    //     }
+
+    // })
+})
+
+    </script>
+</body>
+</html>

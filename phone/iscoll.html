@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <script src="js/iscroll.js"></script>
+    <style>
+    header{
+        height:45px;
+        width:100%;
+        background: #0ff;
+        color: #fff;
+        text-align: center;
+        line-height: 50px
+    }/*
+       #wrapper{
+        height:200px;
+        width:300px;
+        background: #f90;
+       }*/
+       #wrapper {
+          position: absolute;
+          z-index: 1;
+          top: 45px;
+          bottom: 48px;
+          left: -9999px;
+          width: 100%;
+          background: #aaa;
+          overflow: auto;
+        }
+       footer{
+        background: #f00;
+        height:50px;
+       }
+    </style>
+    <title>iSoll</title>
+</head>
+<body>
+    <header>iscoll</header>
+    <div id="wrapper" style="overflow: hidden; left: 0px;">
+    <div id="scroller" style="transform-origin: 0px 0px 0px; transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1); position: absolute; top: -51px; left: 0px; transition-duration: 200ms; -webkit-transition-duration: 200ms;">
+        <div id="pullDown">
+            <span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+        </div>
+
+        <ul id="thelist">
+            <li>Pretty row 1</li>
+            <li>Pretty row 2</li>
+            <li>Pretty row 3</li>
+            <li>Pretty row 4</li>
+            <li>Pretty row 5</li>
+            <li>Pretty row 6</li>
+            <li>Pretty row 7</li>
+            <li>Pretty row 8</li>
+            <li>Pretty row 9</li>
+            <li>Pretty row 10</li>
+            <li>Pretty row 11</li>
+            <li>Pretty row 12</li>
+            <li>Pretty row 13</li>
+            <li>Pretty row 14</li>
+            <li>Pretty row 15</li>
+            <li>Pretty row 16</li>
+            <li>Pretty row 17</li>
+            <li>Pretty row 18</li>
+            <li>Pretty row 19</li>
+            <li>Pretty row 20</li>
+            <li>Pretty row 21</li>
+            <li>Pretty row 22</li>
+            <li>Pretty row 23</li>
+            <li>Pretty row 24</li>
+            <li>Pretty row 25</li>
+            <li>Pretty row 26</li>
+            <li>Pretty row 27</li>
+            <li>Pretty row 28</li>
+            <li>Pretty row 29</li>
+            <li>Pretty row 30</li>
+            <li>Pretty row 31</li>
+            <li>Pretty row 32</li>
+            <li>Pretty row 33</li>
+            <li>Pretty row 34</li>
+            <li>Pretty row 35</li>
+            <li>Pretty row 36</li>
+            <li>Pretty row 37</li>
+            <li>Pretty row 38</li>
+            <li>Pretty row 39</li>
+            <li>Pretty row 40</li>
+        </ul>
+        <div id="pullUp">
+            <span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+        </div>
+    </div>
+<div style="position: absolute; z-index: 100; width: 7px; bottom: 2px; top: 2px; right: 1px; pointer-events: none; transition-property: opacity; -webkit-transition-property: opacity; transition-duration: 350ms; -webkit-transition-duration: 350ms; overflow: hidden; opacity: 0;"><div style="position: absolute; z-index: 100; border: 1px solid rgba(255, 255, 255, 0.901961); box-sizing: border-box; width: 100%; border-radius: 3px; pointer-events: none; transition-property: transform; -webkit-transition-property: transform; transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1); transform: translate(0px, 16.1274834437086px) translateZ(0px); height: 188px; transition-duration: 200ms; -webkit-transition-duration: 200ms; background: padding-box padding-box rgba(0, 0, 0, 0.498039);"></div></div></div>
+    <footer>下部</footer>
+            <script>
+
+                   
+var     myScroll,
+
+    pullDownEl, pullDownOffset,
+
+    pullUpEl, pullUpOffset,
+
+    generatedCount = 0;
+
+ 
+
+/**
+
+ * 下拉刷新 （自定义实现此方法）
+
+ * myScroll.refresh(); 数据加载完成后，调用界面更新方法
+
+ */
+
+function pullDownAction () {
+
+    setTimeout(function () {    
+
+        var el, li, i;
+
+        el = document.getElementById('thelist');
+
+ 
+
+        for (i=0; i<3; i++) {
+
+            li = document.createElement('li');
+
+            li.innerText = 'Generated row ' + (++generatedCount);
+
+            el.insertBefore(li, el.childNodes[0]);
+
+        }
+
+         
+
+        myScroll.refresh();     //数据加载完成后，调用界面更新方法  
+
+    }, 1000);   
+
+}
+
+ 
+
+/**
+
+ * 滚动翻页 （自定义实现此方法）
+
+ * myScroll.refresh();      // 数据加载完成后，调用界面更新方法
+
+ */
+
+function pullUpAction () {
+
+    setTimeout(function () {    // <-- Simulate network congestion, remove setTimeout from production!
+
+        var el, li, i;
+
+        el = document.getElementById('thelist');
+
+ 
+
+        for (i=0; i<3; i++) {
+
+            li = document.createElement('li');
+
+            li.innerText = 'Generated row ' + (++generatedCount);
+
+            el.appendChild(li, el.childNodes[0]);
+
+        }
+
+         
+
+        myScroll.refresh();     //数据加载完成后，调用界面更新方法 
+
+    }, 1000);   
+
+}
+
+ 
+
+/**
+
+ * 初始化iScroll控件
+
+ */
+
+function loaded() {
+
+    pullDownEl = document.getElementById('pullDown');
+
+    pullDownOffset = pullDownEl.offsetHeight;
+
+    pullUpEl = document.getElementById('pullUp');   
+
+    pullUpOffset = pullUpEl.offsetHeight;
+
+     
+
+    myScroll = new iScroll('wrapper', {
+
+        scrollbarClass: 'myScrollbar', 
+
+        useTransition: false, 
+
+        topOffset: pullDownOffset,
+
+        onRefresh: function () {
+
+            if (pullDownEl.className.match('loading')) {
+
+                pullDownEl.className = '';
+
+                pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+
+            } else if (pullUpEl.className.match('loading')) {
+
+                pullUpEl.className = '';
+
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+
+            }
+
+        },
+
+        onScrollMove: function () {
+
+            if (this.y > 5 && !pullDownEl.className.match('flip')) {
+
+                pullDownEl.className = 'flip';
+
+                pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+
+                this.minScrollY = 0;
+
+            } else if (this.y < 5 && pullDownEl.className.match('flip')) {
+
+                pullDownEl.className = '';
+
+                pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+
+                this.minScrollY = -pullDownOffset;
+
+            } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+
+                pullUpEl.className = 'flip';
+
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
+
+                this.maxScrollY = this.maxScrollY;
+
+            } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+
+                pullUpEl.className = '';
+
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+
+                this.maxScrollY = pullUpOffset;
+
+            }
+
+        },
+
+        onScrollEnd: function () {
+
+            if (pullDownEl.className.match('flip')) {
+
+                pullDownEl.className = 'loading';
+
+                pullDownEl.querySelector('.pullDownLabel').innerHTML = '加载中...';                
+
+                pullDownAction();   // ajax call
+
+            } else if (pullUpEl.className.match('flip')) {
+
+                pullUpEl.className = 'loading';
+
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';                
+
+                pullUpAction(); // ajax call
+
+            }
+
+        }
+
+    });
+
+     
+
+    setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
+
+}
+
+ 
+
+//初始化绑定iScroll控件 
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+         </script>
+   
+</body>
+</html>

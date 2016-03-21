@@ -1,0 +1,816 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"index	(person.html)"
+			],
+			[
+				"footer",
+				"footerheight"
+			],
+			[
+				"scroll",
+				"scroller"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"cl",
+				"class	Attr"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"person",
+				"personone"
+			],
+			[
+				"hi",
+				"hide	(scroll.js)"
+			],
+			[
+				"pull",
+				"pulldown"
+			],
+			[
+				"pu",
+				"pulldown"
+			],
+			[
+				"pulldo",
+				"pullDownFlag"
+			],
+			[
+				"fla",
+				"pullUpFlag"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"ons",
+				"onScrollEnd	(second.html)"
+			],
+			[
+				"onsc",
+				"onScrollStart"
+			],
+			[
+				"inf",
+				"info	(second.html)"
+			],
+			[
+				"on",
+				"onScrollStart	(second.html)"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"sta",
+				"startingMaxY	(scroll.js)"
+			],
+			[
+				"webkit",
+				"webkit-box"
+			],
+			[
+				"b",
+				"both"
+			],
+			[
+				"fo",
+				"footerheight"
+			],
+			[
+				"he",
+				"headerheight"
+			],
+			[
+				"foo",
+				"footer	(index.html)"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pic",
+				"pic2	(index.html)"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"padi",
+				"padding-left"
+			],
+			[
+				"perso",
+				"person1	(index.html)"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"top",
+				"topOffset	(iscoll.html)"
+			],
+			[
+				"w",
+				"wrapper"
+			],
+			[
+				"is",
+				"iscoll"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"line-",
+				"line-height"
+			],
+			[
+				"pal",
+				"placeholder	Attr"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"D",
+				"Drag"
+			],
+			[
+				"drag",
+				"dragover"
+			],
+			[
+				"dr",
+				"dragover"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"da",
+				"dragstart"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"onmous",
+				"onmousedown"
+			],
+			[
+				"li",
+				"list"
+			],
+			[
+				"ajax",
+				"ajaxlist"
+			],
+			[
+				"of",
+				"offsetHeight"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"sr",
+				"scrollTop	(scroll.html)"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"s",
+				"scroll"
+			],
+			[
+				"win",
+				"window"
+			],
+			[
+				"func",
+				"function	(pubuliu.html)"
+			],
+			[
+				"te",
+				"text	(jquery-1.11.3.js)"
+			],
+			[
+				"con",
+				"console	(registrt.html)"
+			],
+			[
+				"Da",
+				"Date	(common.html)"
+			],
+			[
+				"m",
+				"method"
+			],
+			[
+				"Xm",
+				"XMLHttpRequest	(ajax.js)"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"请输入",
+				"请输入密码	(login.html)"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"an",
+				"animate	(index.html)"
+			],
+			[
+				"document",
+				"documentElement	(shopping.js)"
+			],
+			[
+				"scrl",
+				"scrollTop"
+			],
+			[
+				"retu",
+				"returnTop"
+			],
+			[
+				"lien",
+				"line-height"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"createE",
+				"createElement	(touch-0.2.14.js)"
+			],
+			[
+				"inp",
+				"inplogin"
+			],
+			[
+				"swi",
+				"swiper-3.3.1	(index.html)"
+			],
+			[
+				"o",
+				"outline"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"sl",
+				"slide1"
+			],
+			[
+				"re",
+				"red"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"off",
+				"offsetTop+top"
+			],
+			[
+				"ob",
+				"objq"
+			],
+			[
+				"temp",
+				"temp=4"
+			],
+			[
+				"end",
+				"endnum"
+			],
+			[
+				"st",
+				"step"
+			],
+			[
+				"app",
+				"appendTo	(index.html)"
+			],
+			[
+				"tou",
+				"touchstart	(index.html)"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"prev",
+				"preventDefault	(index.html)"
+			],
+			[
+				"touch",
+				"touchstart	(index.html)"
+			],
+			[
+				"j",
+				"jquery-1.11.3	(index.html)"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"start",
+				"startRotate"
+			],
+			[
+				"rota",
+				"rotate"
+			],
+			[
+				"web",
+				"webkitTransform"
+			],
+			[
+				"me",
+				"meta"
+			],
+			[
+				"touchs",
+				"touchstart	(touch-0.2.14.js)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"ondro",
+				"ondrop	Attr"
+			],
+			[
+				"onsta",
+				"ondragstart	Attr"
+			],
+			[
+				"se",
+				"select	Tag"
+			],
+			[
+				"i",
+				"input	Tag"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"main",
+				"main6"
+			],
+			[
+				"font-siz",
+				"font-size"
+			],
+			[
+				"mle",
+				"mleft3	(style.css)"
+			],
+			[
+				"tetx",
+				"text-decoration"
+			],
+			[
+				"tab",
+				"tabright	(index.html)"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"list",
+				"list-style"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 348.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/cuizhen/iscroll/second.html",
+		"/D/java/apache-tomcat-6.0.39/webapps/phone/index.html",
+		"/D/cuizhen/js中期/jquery/手风琴/index.html",
+		"/D/cuizhen/js中期/jq案例/第13单元动画animate/动画队列.php",
+		"/D/cuizhen/js中期/jquery/购物车精简版.html",
+		"/C/Users/Administrator/Desktop/生鲜/index.html",
+		"/D/冲吧年轻人/iscroll/scroll.css",
+		"/C/Users/Administrator/Desktop/scroll/list.html",
+		"/D/冲吧年轻人/scroll.js",
+		"/D/cuizhen/iscroll/scroll.css",
+		"/D/cuizhen/iscroll/index.html",
+		"/D/cuizhen/iscroll/iscrollAssist.js",
+		"/C/Users/Administrator/Desktop/scroll/iscrollAssist.js",
+		"/C/wamp/www/phone/swiper.html",
+		"/C/wamp/www/phone/search.html",
+		"/D/冲吧年轻人/iscroll/ooo.html",
+		"/C/wamp/www/phone/index.html",
+		"/C/wamp/www/phone/is3.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$EXa0.973/ux_1458047449_0031703/demo.html",
+		"/D/冲吧年轻人/iscroll/scroll.scss",
+		"/C/wamp/www/phone/is2.html",
+		"/C/wamp/www/phone/person.html",
+		"/D/冲吧年轻人/iscroll/iscroll.less.html",
+		"/D/冲吧年轻人/iscroll/scroll.scss.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$EXa0.337/ux_1458047449_0031703/demo.html",
+		"/D/cuizhen/js中期/html/css3练习/弹性布局竖直.html",
+		"/D/cuizhen/js中期/html/study/弹性布局2.html",
+		"/D/cuizhen/js中期/html/css3/弹性盒1.html",
+		"/D/cuizhen/js中期/html/study/弹性布局.html",
+		"/D/冲吧年轻人/iscroll/new_fi2le.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$EXa0.734/ux_1458003764_5590549/demo.html",
+		"/D/cuizhen/char_swiper/index.html",
+		"/C/wamp/www/phone/iscoll.html",
+		"/C/wamp/www/phone/is4.html",
+		"/C/Users/Administrator/Desktop/aaa/style/iscoll.html",
+		"/C/Users/Administrator/Desktop/aaa/style/findpsw.html",
+		"/C/Users/Administrator/Desktop/aaa/style/second.css",
+		"/C/wamp/www/phone/forget.html",
+		"/C/wamp/www/phone/psw.html",
+		"/C/wamp/www/phone/register.html",
+		"/D/送送-  APP/综合(王萌)/index.html",
+		"/D/送送-  APP/综合(王萌)/html/book.html",
+		"/C/Users/Administrator/Desktop/aaa/style/面向对象.html",
+		"/D/送送-  APP/综合(王萌)/html/userInfo.html",
+		"/C/Users/Administrator/Desktop/aaa/style/ix.css",
+		"/C/Users/Administrator/Desktop/aaa/second.html",
+		"/C/Users/Administrator/Desktop/aaa/style/second.scss",
+		"/C/Users/Administrator/Desktop/aaa/style/index.scss",
+		"/C/Users/Administrator/Desktop/aaa/index.html",
+		"/C/Users/Administrator/Desktop/aaa/style/面向对象",
+		"/C/Users/Administrator/Desktop/aaa/style/second.html",
+		"/D/cuizhen/scroll.html",
+		"/C/wamp/www/hammer/index.html",
+		"/C/wamp/www/hammer/second.html",
+		"/D/HBuilder.6.9.3.windows/HBuilder/http",
+		"/C/wamp/www/pubuliu/pubuliu.html",
+		"/C/wamp/www/pubuliu/aa.html",
+		"/C/wamp/www/ajax/scroll.html",
+		"/D/360安全浏览器下载/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Administrator/Desktop/微信场景/index.html",
+		"/C/wamp/www/pubuliu/getPics.php",
+		"/C/wamp/www/pubuliu/ajax.js",
+		"/C/wamp/www/ajax/common.html",
+		"/C/wamp/www/ajax/loadDone.html",
+		"/C/wamp/www/ajax/text.txt",
+		"/C/Users/Administrator/Desktop/2015.11.5(雀巢)/翻页/index.html",
+		"/D/cuizhen/js中期/html/SWIPER/index.html",
+		"/C/Users/Administrator/Desktop/uimm(动画特效)-喵喵/uimm(每周提醒底部ul)/login.html",
+		"/D/text.txt",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.943/getPics.php",
+		"/C/wamp/www/lesson2/pubuliu.html",
+		"/D/common.html",
+		"/C/wamp/www/lesson2/ajax.js",
+		"/C/Users/Administrator/Desktop/生鲜/registrt.html",
+		"/C/Users/Administrator/Desktop/生鲜/login.html",
+		"/C/wamp/www/lesson2/miaov_guestbook_2014-01-08.sql",
+		"/C/Users/Administrator/Desktop/生鲜/css/login.css",
+		"/C/Users/Administrator/Desktop/生鲜/css/register.css",
+		"/C/Users/Administrator/Desktop/ajax.js",
+		"/C/Users/Administrator/Desktop/生鲜/css/common.css",
+		"/C/Users/Administrator/Desktop/uimm(动画特效)-喵喵/uimm(每周提醒底部ul)/index.html",
+		"/C/wamp/www/lesson2/guestbook/Controller/IndexController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.737/DB_Mysql.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.525/common.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.927/common.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.806/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.673/IndexController.class.php",
+		"/C/Users/Administrator/Desktop/uimm(动画特效)-喵喵/uimm(每周提醒底部ul)/register.html",
+		"/C/Users/Administrator/Desktop/生鲜/css/index.css",
+		"/C/Users/Administrator/Desktop/生鲜/js/index.js",
+		"/D/cuizhen/js前期/shopping考试/js/shopping.js",
+		"/D/cuizhen/js中期/跨域/百度链接.html",
+		"/C/Users/Administrator/Desktop/uimm(动画特效)-喵喵/uimm(每周提醒底部ul)/lossPwd.html",
+		"/C/Users/Administrator/Desktop/生鲜/js/swiper-3.3.1.jquery.min.js",
+		"/C/Users/Administrator/Desktop/生鲜/js/jquery-1.11.3.js",
+		"/C/Users/Administrator/Desktop/生鲜/js/swiper.animate-twice.min.js",
+		"/C/Users/Administrator/Desktop/微信场景/img/matog.png",
+		"/C/Users/Administrator/Desktop/微信场景/js/swiper-3.3.1.jquery.min.js",
+		"/C/Users/Administrator/Desktop/moban.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$EXa0.494/举报素材_19228941.html",
+		"/C/Users/Administrator/Desktop/生鲜/second.html",
+		"/D/cuizhen/js中期/html5教材及案例/demo/css/demo.css",
+		"/C/Users/Administrator/Desktop/swiper/index.html",
+		"/D/cuizhen/生鲜/html/ShengXian2/js/mui.min.js",
+		"/D/cuizhen/生鲜/html/ShengXian/index.html",
+		"/D/cuizhen/生鲜/html/ShengXian/js/mui.js",
+		"/C/Users/Administrator/Desktop/移动端切换js插件/Swiper-master/demo-apps/appstore/index.html",
+		"/C/Users/Administrator/Desktop/移动端切换js插件/Swiper-master/demo-apps/simple/index.html",
+		"/D/cuizhen/js中期/html/tarchd/水平翻页.html",
+		"/C/Users/Administrator/Desktop/滚动消息提示/滚动消息提示.html",
+		"/D/cuizhen/js中期/html/tarchd/wufenglunbo.html",
+		"/D/cuizhen/js中期/html/tarchd/yangjing.html",
+		"/C/Users/Administrator/Desktop/hammerjs-hammer.js-52a090e/tests/manual/nested.html",
+		"/D/cuizhen/js中期/html/tarchd/翻页2.html",
+		"/D/cuizhen/js中期/html/tarchd/上下翻页.html",
+		"/D/cuizhen/水平翻页.html",
+		"/D/cuizhen/js中期/html/tarchd/获取元素高度.html",
+		"/D/cuizhen/js中期/html/tarchd/背景渐变.html",
+		"/D/cuizhen/js中期/html/tarchd/翻页.html",
+		"/D/cuizhen/js中期/html/tarchd/获取元素高度",
+		"/D/cuizhen/js中期/html/tarchd/index.html",
+		"/D/cuizhen/js中期/jQuery无缝轮播图/index.html",
+		"/C/Users/Administrator/Desktop/水平翻页.html",
+		"/D/cuizhen/js中期/html/tarchd/无缝轮播",
+		"/D/cuizhen/js中期/html/mobil项目/second.html",
+		"/D/cuizhen/js中期/html/mobil项目/案例2.html",
+		"/D/cuizhen/js中期/html/tarchd/js/touch-0.2.14.js",
+		"/D/cuizhen/js中期/html/tarchd/js/jquery-1.11.3.js"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"        ",
+			"div",
+			"autoplay:1000,",
+			"			\n",
+			"		       \n",
+			"        	\n",
+			"/>",
+			";}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

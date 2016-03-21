@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/rem.js"></script>
+     <script src='js/iscrollAssist.js'></script>
+    <title>首页</title>
+    <style>
+    html,body{
+        height:100%;
+        background: #f1f1f1;
+    }
+    body{
+        height: 100%;
+        margin:0 auto;
+        max-width: 640px;
+        background: #f1f1f1;
+        position: relative;
+    }
+    header{
+        width:100%;
+        height:27px;
+        padding-top:10px; 
+        background:#0f91c5;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        line-height: 37px;
+    }
+    header div{
+        margin:0px auto;
+        overflow: hidden;
+        width:107px;
+        height: 22px;
+    }
+    header .headerleft{
+        width:53.5px;
+        height:22px;
+        background: #ccc;
+        opacity: 0.5;
+        text-align: center;
+        display: block;
+        float: left;
+        line-height: 22px;
+        border-radius: 10px 0 0 10px;
+        
+    }
+    header .headerrigth{
+        width:53.5px;
+        height:22px;
+        background: #ccc;
+        opacity: 0.3;
+        text-align: center;
+        line-height: 22px;
+        border-radius: 0px 10px 10px 0px;
+        display: block;
+        float: left;
+    }
+    nav ul{
+        height:38px;
+        width:100%;
+        background: #fff;
+        font-size: 14px;
+        border-bottom:1px solid #d9d9d9; 
+    }
+    nav ul li{
+        float: left;
+        width:33.3333333%;
+        height:35px;
+       
+    }
+     nav ul li a {
+        display: block;
+        width:100%;
+        height:35px;
+        line-height: 38px;
+        text-align: center;
+     }
+     nav ul p{
+        height:3px;
+        background: #0f91c5;
+        display: none;
+    }
+    nav ul li:nth-child(1) p{
+        display: block;
+    }
+   /*  nav ul li:active>p{
+        display: block;
+    }*/
+    .swiper{
+        background: #ccc;
+        clear: both;
+        position: relative;
+    }
+    .scroller{margin-top: 5px;background: #fff;overflow:hidden;padding-top:2px;font-size: 14px; border-top:1px solid #d9d9d9}
+    .scroller .mainleft{
+        width:49%;  
+        float: left;
+    }
+    .scroller img{
+        width:100%;
+        height: auto;
+    }
+    .scroller .mainright{
+        width:49%;
+        float: right;
+    }
+    .scroller dl{  border:1px solid #ccc;margin-bottom: 4.5px;}
+    .scroller dd{margin:5px 0 11px 10px;}
+     .nav{
+        position:fixed;
+        bottom: 0px;
+        height: 0.8rem;
+        width:100%;
+        font-size: 0.24rem;     
+    }
+     .nav ul{
+        height: 0.8rem;
+        width:100%;
+        border-top:1px solid #ccc; 
+        max-width: 640px;
+        font-size: 0.24rem;
+        background: #fff;
+     }
+     .nav ul li{
+        width:20%;
+        height:0.8px;
+        float: left;
+        text-align: center;
+        line-height: 0.8px;
+       text-align:center;
+     }
+     .nav ul li a {
+      text-align: center;
+      width:0.5rem;
+      height: 0.8rem;
+      display: inline-block;
+      padding-top: 0.6rem;
+      box-sizing:border-box;
+      color:#ccc;
+     }
+      .nav ul li:nth-child(3) a{
+      width:0.85rem;
+      height:0.85rem;
+      border:0.02rem #ccc solid;
+      border-radius: 50%;
+      margin-top:-0.1rem; 
+      background: url(img/camera.png) #fff no-repeat center;
+      background-size:0.52rem 0.52rem;
+      }
+       .nav ul li:nth-child(1) a{
+     background: url(img/picaa.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #0f91c5;
+
+     }
+    .nav ul li:nth-child(2) a{
+    background: url(img/picbb.png) no-repeat 0.10rem 0.10rem;
+    background-size:0.3rem 0.3rem; 
+    color: #ddd;
+     }
+    .nav ul li:nth-child(4) a{
+     background: url(img/piccb.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #ddd;
+     }
+    .nav ul li:nth-child(5) a{
+     background: url(img/picdb.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #ddd;
+     }
+    .nav ul li:nth-child(2) a:active{
+     background: url(img/picba.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #0f91c5;
+     }
+    .nav ul li:nth-child(3) a:active{
+      width:0.85rem;
+      height:0.85rem;
+      border:0.02rem #ccc solid;
+      border-radius: 50%;
+      margin-top:-0.1rem; 
+      background: url(img/crame.png) #fff no-repeat center;
+      background-size:0.52rem 0.52rem; 
+      }
+    .nav ul li:nth-child(4) a:active{
+     background: url(img/picca.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #0f91c5;
+     }
+      .nav ul li:nth-child(5) a:active{
+     background: url(img/picda.png) no-repeat 0.10rem 0.10rem;
+     background-size:0.3rem 0.3rem; 
+     color: #0f91c5;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="headerleft">热点</a>
+            <a class="headerrigth" href="indexa.html">关注</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a>足球现场</a><p>    </p></li>
+            <li><a>足球生活</a><p>    </p></li>
+            <li><a>足球美女</a><p>    </p></li>
+        </ul>
+    </nav>
+<div id="wrapper"  style="overflow:hidden;position: relative;">
+    <dl style="-webkit-margin-before:0em;" class="dll1">
+       <!--  <div id="pulldown" style="font-size: 12px;display: none;">
+        1111111111111111111111111111111111111111111111
+        </div>
+         <div id="pulldown" style="display:none;text-align: center;height:0">
+         aaaaaa
+        </div> -->
+        <div class="scroller" style="display: block;">
+             <div class="mainleft">
+            
+             </div>
+              <div class="mainright">
+                   
+              </div>
+       </div>
+        
+         <div class="scroller" style=display:none>
+             <div class="mainleft">
+             
+         </div>
+          <div class="mainright">
+               
+       </div>
+        </div>
+       <div class="scroller" style="display: none;">
+          <div class="mainleft">
+         </div>
+          <div class="mainright">
+          </div>
+       </div>
+</dl>
+</div>
+   <!--  <div class="main">  
+     </div> -->
+    <div class="nav" style="height: 0.8rem">
+        <ul id="ull">
+            <li>
+              <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="search.html">发现</a>
+            </li>
+            <li>  
+              <a href="###"><input type="file" hidden=""></a>
+            </li>
+            <li>
+                 <a href="person.html">我的</a>
+            </li>
+            <li>
+                <a href="###">退出</a>
+            </li>
+        </ul>
+    </div>
+        <script>
+        var flag=true;
+         var myscroll;
+        indexaddpic(0);
+        function  indexaddpic(num){
+            var mainleft=$(".scroller").eq(num).find(".mainleft");
+            var mainright=$(".scroller").eq(num).find('.mainright');
+            mainleft.text("");
+            mainright.text("");
+            var lw=mainleft.width();
+            var tt;
+            var aa=num+1
+            function getshout(){
+                var rh=mainright.height();
+                var lh=mainleft.height();
+                if(lh<rh){
+                 tt=mainleft[0];
+                }else{
+                 tt=mainright[0];
+                }
+               return tt
+            }
+            if (flag) {
+                flag=false;
+              $.ajax({
+                type:"GET",
+                url:"http://localhost:8080/Proxy/FootBall/tweet/json/query/hotspot.do",
+                async: true,
+                data:{
+                  "category":aa,
+                },
+                success:function(e){
+                  var data=JSON.parse(e);
+                  var aa=data.data.tweetlist;
+                  console.info(aa);
+                   for(var i=0;i<aa.length;i++){
+                    var dl=document.createElement("dl");
+                    var dt=document.createElement("dt");
+                    var dd=document.createElement("dd");  
+                    var img=new Image();
+                    img.src="http://101.200.173.217:8080/FootBall/upload/files/20150715/"+aa[i].defaultFileName;
+                    img.onload=function(){
+                        myscroll.refresh();
+                        console.info(0)
+                    }
+                    dt.appendChild(img);
+                    dd.innerHTML=aa[i].content;
+                    dl.appendChild(dt);
+                    dl.appendChild(dd);
+                    getshout().appendChild(dl);
+
+                  }
+                 // $("<dl><dt><img src= http://101.200.173.217:8080/FootBall/upload/files/20150715/"+aa[i].defaultFileName+"></dt><dd>"+aa[i].content+"</dd></dl>").appendTo(getshout() 
+                  flag=true;
+                   myscroll.refresh();
+                  }
+               
+               })
+
+                }
+        }
+              $(function(){
+                 $("nav ul li").on("click",function(){
+                 $this=$(this).index();
+                 $("#wrapper .scroller").hide();
+                 $("#wrapper .scroller").eq($this).show();
+                 $("nav ul li").find("p").hide()
+                 $("nav ul li").eq($this).find("p").show()
+                switch($this){
+                 case 0:
+                 if(flag){
+                     indexaddpic(0)
+                 }
+                 break;
+                 case 1:
+                  if(flag){
+                     indexaddpic(1)
+                 }
+                 break;
+                 case 2: 
+                  if(flag){
+                     indexaddpic(2)
+                    
+                 }
+                 break;
+                }
+                
+                 myscroll.scrollTo(0,0,0,false)
+                 })
+                })
+                var headerheight=$("header").height();
+                var navheight=$("nav").height();
+                var footerheight=$("#ull").height();
+                var allheight=$(window).height()
+                var hhh 
+                 var pulldown=$("#pulldown");
+                 var pullup=$("#pullup");
+                 var pullUpFlag,pullDownFlag
+                $("#wrapper").height(allheight-(headerheight+navheight+40))
+               
+                 myscroll=new iScroll("wrapper",{
+                                mouseWheel: true, 
+                                onScrollStart:function(){   
+                                },
+                                onScrollMove:function(){
+                                     if(this.y>40){    //判断下拉
+                                        pulldown.show();
+                                        pullDownFlag = 1;
+                                    }else if(this.y<(this.maxScrollY-40)){   //
+                                        pullup.text("放开刷新页面") ;
+                                        pullUpFlag = 1;
+                                    }              //最大的高度
+
+                                   
+                                },
+                                onScrollEnd:function(){
+                                    if(pullDownFlag==1){
+                                       pulldown.height(40)
+                                    // for(i=0;i<1000000000;i++){
+                                    // }
+                                    pulldown.hide();
+                                    pullDownFlag = 0;
+                                }else if(pullUpFlag==1){
+                                    pullup.innerHTML = "上拉刷新…";
+                                    pullUpFlag = 0;
+                                }
+                                     // console.info(this.y)                           //滚动条当前的高度 
+                                     // 
+                                     // myscroll.refresh();
+                                },
+                             })
+              
+             
+         </script> 
+</body>
+</html>
